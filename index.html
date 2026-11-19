@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbledown Digital | Friendly local help with the online side of your business</title>
+<meta name="description" content="Websites, Google listings, online shops and time-saving AI for Kent shops, cafés, trades and farms. Fixed prices, plain English, and I come to you. Based in Canterbury.">
+<link rel="canonical" href="https://harbledowndigital.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Harbledown Digital","description":"Websites, Google listings, online shops and time-saving AI for small businesses in Kent.","founder":{"@type":"Person","name":"Elliott Lee"},"telephone":"07809 263767","email":"info@harbledowndigital.com","areaServed":["Canterbury","Whitstable","Herne Bay","Faversham","Sandwich","Deal","Ashford","East Kent"],"address":{"@type":"PostalAddress","addressLocality":"Canterbury","addressRegion":"Kent","addressCountry":"GB"}}
+</script>
+<style>
+:root{--hop:#2F4A3A;--hop-deep:#1F3328;--oast:#F7F8F4;--chalk:#E4E8E1;--sun:#F0C44C;--ink:#1D2420;--line:#C9D1C6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Atkinson Hyperlegible",system-ui,sans-serif;background:var(--oast);color:var(--ink);font-size:19px;line-height:1.65}
+a{color:var(--hop)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:600;letter-spacing:-.01em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.draft{background:var(--sun);color:var(--ink);font-size:14px;text-align:center;padding:7px 12px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:12px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo b{font-family:Newsreader,serif;font-size:24px;font-weight:600;line-height:1.05}
+.call{background:var(--hop);color:#fff;text-decoration:none;padding:12px 20px;border-radius:10px;font-weight:700}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;padding:36px 0 72px}
+h1{font-size:clamp(42px,5.8vw,70px);line-height:1.04}
+.lede{font-size:22px;margin:22px 0 30px;max-width:38ch}
+.btn{display:inline-block;background:var(--hop);color:#fff;text-decoration:none;padding:15px 24px;border-radius:10px;font-weight:700;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn.light{background:transparent;color:var(--hop);box-shadow:inset 0 0 0 2px var(--hop);margin-left:10px}
+.note{font-size:16px;margin-top:14px;color:#4A564E}
+.oast{width:100%;max-width:360px;justify-self:end}
+section{padding:80px 0}
+h2{font-size:clamp(32px,4.2vw,48px);line-height:1.1;margin-bottom:14px}
+.intro{max-width:58ch;margin-bottom:40px}
+.green{background:var(--hop);color:#fff}
+.green a{color:var(--sun)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--sun);padding-top:16px}
+.steps li::before{content:counter(s);font-family:Newsreader,serif;font-size:44px;line-height:1;display:block;margin-bottom:8px;color:var(--sun)}
+.steps strong{display:block;font-size:21px;margin-bottom:6px}
+.jobs{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.job{padding:22px 0;border-bottom:1px solid var(--line)}
+.job .top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.job h3{font-size:25px}
+.job .price{font-weight:700;white-space:nowrap}
+.job p{margin-top:4px;color:#3A453E}
+.mot{margin-top:36px;background:var(--chalk);border-radius:14px;padding:24px 28px;max-width:760px}
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.story blockquote{font-family:Newsreader,serif;font-size:27px;line-height:1.35;border-left:4px solid var(--sun);padding-left:22px}
+.editme{background:#FFF6D6;border:2px dashed #C9A227;border-radius:10px;padding:18px 20px;margin-bottom:18px}
+.editme small{display:block;font-weight:700;color:#7A5F00;margin-bottom:6px}
+.promises{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 40px;list-style:none}
+.promises strong{display:block;font-size:20px}
+.examples{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ex{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:border-color .15s}
+.green a.ex{color:var(--ink)}
+.ex:hover{border-color:var(--hop)}
+.ex b{display:block;font-size:19px;margin-bottom:4px}
+.ex span{font-size:16px;color:#4A564E}
+.ex .sw{height:8px;border-radius:4px;margin-bottom:16px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:700;font-size:20px}
+.faq details p{margin-top:10px;max-width:62ch}
+.area{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.area span{background:var(--chalk);border-radius:30px;padding:6px 14px;font-size:17px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.phone{font-family:Newsreader,serif;font-size:40px;line-height:1.1;margin:10px 0 6px}
+.ph{background:#FFF6D6;border:2px dashed #C9A227;padding:0 10px;border-radius:8px;font-size:28px}
+form{display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:700;font-size:17px}
+input,select,textarea{font:inherit;font-size:18px;padding:12px;border:2px solid var(--hop);border-radius:10px;background:#fff}
+.ok{display:none;background:var(--chalk);border-radius:10px;padding:14px 16px}
+footer{padding:36px 0;font-size:16px;border-top:1px solid var(--line)}
+@media (max-width:900px){
+ .hero,.story,.contact{grid-template-columns:1fr}
+ .oast{justify-self:start;max-width:220px}
+ .steps{grid-template-columns:1fr 1fr}
+ .jobs,.promises{grid-template-columns:1fr}
+ .examples{grid-template-columns:1fr 1fr}
+ .btn.light{margin:10px 0 0}
+}
+@media (max-width:520px){.call{padding:10px 14px;font-size:16px}.logo b{font-size:20px}.steps,.examples{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <a class="logo" href="#top" aria-label="Harbledown Digital home">
+  <svg width="50" height="50" viewBox="0 0 50 50" aria-hidden="true"><rect width="50" height="50" rx="12" fill="#2F4A3A"/><path d="M16 40V24l9-12 9 12v16z" fill="#F7F8F4"/><path d="M25 12l3 4h-6z" fill="#F0C44C"/><rect x="22" y="30" width="6" height="10" fill="#2F4A3A"/></svg>
+  <b>Harbledown<br>Digital</b>
+ </a>
+ <a class="call" href="#contact">Ask for a chat</a>
+</header>
+
+<main id="top">
+<div class="hero">
+ <div>
+  <h1>The online side of your business, sorted by someone local</h1>
+  <p class="lede">I'm Elliott. I help Kent shops, cafés, trades and farms with websites, Google, and the techy jobs you never get round to. Fixed prices, plain English, and I come to you.</p>
+  <a class="btn" href="#contact">Book a free chat</a><a class="btn light" href="#jobs">See prices</a>
+  <p class="note">No monthly contracts. You own everything I make for you.</p>
+ </div>
+ <svg class="oast" viewBox="0 0 300 300" aria-hidden="true">
+  <circle cx="150" cy="150" r="140" fill="#E4E8E1"/>
+  <rect x="40" y="190" width="150" height="70" fill="#2F4A3A"/>
+  <path d="M40 190l75-40 75 40z" fill="#1F3328"/>
+  <rect x="180" y="150" width="70" height="110" fill="#2F4A3A"/>
+  <path d="M175 150l40-80 40 80z" fill="#1F3328"/>
+  <path d="M205 70h20l6-16h-32z" fill="#F7F8F4"/>
+  <path d="M231 54l14 6-14 4z" fill="#F7F8F4"/>
+  <rect x="70" y="212" width="18" height="22" fill="#F0C44C"/>
+  <rect x="120" y="212" width="18" height="22" fill="#F0C44C"/>
+  <rect x="205" y="200" width="20" height="26" fill="#F0C44C"/>
+  <path d="M10 262h280" stroke="#1F3328" stroke-width="4"/>
+ </svg>
+</div>
+</main>
+</div>
+
+<section class="green"><div class="wrap">
+ <h2>How it works</h2>
+ <p class="intro">No jargon and no surprises. You stay in charge, and I do the fiddly bits.</p>
+ <ol class="steps">
+  <li><strong>A chat</strong>I come to you at a quiet time, or we talk on the phone. You tell me what's bothering you.</li>
+  <li><strong>A fixed price</strong>I write down exactly what I'll do and what it costs. Nothing starts until you're happy.</li>
+  <li><strong>I do the work</strong>You check it before anything goes live. Changes are part of the job.</li>
+  <li><strong>Handover</strong>You get a printed guide with your logins and how to do the common things, and 30 days to ring me with any question.</li>
+ </ol>
+</div></section>
+
+<section id="jobs"><div class="wrap">
+ <h2>Jobs and prices</h2>
+ <p class="intro">Each job is done once, at a fixed price. Most people start with getting found on Google.</p>
+ <div class="jobs">
+  <div class="job"><div class="top"><h3>Get found on Google</h3><span class="price">£195</span></div><p>Your Google listing set up or fixed: the right hours, good photos, and a card for the counter so happy customers can leave reviews.</p></div>
+  <div class="job"><div class="top"><h3>A simple website</h3><span class="price">from £695</span></div><p>Up to five pages that look right on a phone and tell people what they need. Includes getting found on Google.</p></div>
+  <div class="job"><div class="top"><h3>Selling online</h3><span class="price">from £995</span></div><p>A small online shop set up on a trusted platform like Shopify or Square, with your products added and a lesson on taking orders.</p></div>
+  <div class="job"><div class="top"><h3>Logo and look refresh</h3><span class="price">£245</span></div><p>A tidy logo and colours you can use on signs, menus, vans and social media.</p></div>
+  <div class="job"><div class="top"><h3>Time-saver session</h3><span class="price">£345</span></div><p>I set up two or three AI helpers that save you hours: replying to reviews, answering common enquiries, writing social posts. With a printed how-to.</p></div>
+  <div class="job"><div class="top"><h3>Safe and sound check</h3><span class="price">£195</span></div><p>Passwords, backups, email and card-payment safety. You get a plain-English list of what's fine and what to fix.</p></div>
+ </div>
+ <div class="mot"><strong>Optional yearly check-up, £149.</strong> Like a boiler service. Once a year I check everything still works and update your hours, photos and prices. Only if you want it.</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap story">
+ <blockquote>"There are lots of business owners who are brilliant at what they do and simply don't have the time, or the patience, for computers."</blockquote>
+ <div>
+  <h2>Why I do this</h2>
+  <p style="margin-bottom:18px">I grew up in Goodnestone and have lived around Canterbury most of my life. A few years ago my uncle ran a clay shooting business near Dover. He was great with a shotgun and great with his customers, but he wanted nothing to do with computers or websites. So I put him online, generated the orders for him, and he got on with what he loved. I've spent 25 years in IT, and I still think providing no-fuss online support is the most useful thing I can do for a local business.</p>
+  <p>I'm not an agency and there's no call centre. When you ring, you get me.</p>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <h2>My promises</h2>
+ <ul class="promises" style="margin-top:28px">
+  <li><strong>Plain English</strong>If I can't explain it simply, I haven't done my job.</li>
+  <li><strong>I come to you</strong>At your quiet time, after the lunch rush or before you open.</li>
+  <li><strong>Fixed prices</strong>Agreed on paper before I start. Pay when you're happy.</li>
+  <li><strong>You own it all</strong>Your website, your address, your logins. No lock-in.</li>
+  <li><strong>30 days' aftercare</strong>Any question, any time, included in the price.</li>
+  <li><strong>Safe by default</strong>Twenty-five years in IT and IT security, so your site and accounts are set up properly.</li>
+ </ul>
+</div></section>
+
+<section class="green"><div class="wrap">
+ <h2>Examples of what I build</h2>
+ <p class="intro">These are sample sites for made-up Kent businesses, so you can see the style and try the features.</p>
+ <div class="examples">
+  <a class="ex" href="https://claude.ai/artifact/J3wQgJAr8rH6abC4EfzZhW"><div class="sw" style="background:#E8C547"></div><b>An electrician</b><span>Prices, area covered and a quote form</span></a>
+  <a class="ex" href="https://claude.ai/artifact/KEBgnwd2VczeZLQkNJUgVx"><div class="sw" style="background:#5B2A4A"></div><b>A bakery</b><span>Today's bakes, menu, hours and cake orders</span></a>
+  <a class="ex" href="https://claude.ai/artifact/QPkZjVU9YVZoNfnAUt3hUW"><div class="sw" style="background:#E0A526"></div><b>A honey producer</b><span>A small online shop with a working basket</span></a>
+  <a class="ex" href="https://claude.ai/artifact/6QagFSUiHooNSGmv234TPa"><div class="sw" style="background:#0E4F51"></div><b>A dog groomer</b><span>Online booking with times and prices</span></a>
+ </div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+ <h2>Common questions</h2>
+ <details><summary>I'm not good with computers. Is that a problem?</summary><p>Not at all. That's who I'm here for. I'll do the technical parts and show you only what you need, at your pace.</p></details>
+ <details><summary>Do I have to pay every month?</summary><p>No. Each job is a one-off price. The yearly check-up is optional, and you can stop it whenever you like.</p></details>
+ <details><summary>Who owns the website?</summary><p>You do. The website, the web address and all the logins are in your name. If you ever want someone else to look after it, you can take it with you.</p></details>
+ <details><summary>What if I don't like what you've made?</summary><p>You see everything before it goes live, and changes are part of the job. You pay when you're happy.</p></details>
+ <details><summary>Is AI safe for my business?</summary><p>It can be, if it's set up carefully. I make sure your customers' details stay private and that nothing goes out without you checking it.</p></details>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap contact">
+ <div>
+  <h2>Let's have a chat</h2>
+  <p>Ring or text me, or leave your details and I'll call you back at a time that suits you.</p>
+  <p class="phone"><a href="tel:07809263767" style="color:inherit;text-decoration:none">07809 263767</a></p>
+  <p><a href="mailto:info@harbledowndigital.com">info@harbledowndigital.com</a></p>
+  <p class="note">I usually reply the same day.</p>
+  <h3 style="margin-top:34px;font-size:24px">Where I work</h3>
+  <div class="area"><span>Canterbury</span><span>Whitstable</span><span>Herne Bay</span><span>Faversham</span><span>Sandwich</span><span>Deal</span><span>Ashford</span><span>The villages in between</span></div>
+ </div>
+ <form id="cb" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <label>Your name<input required name="name" autocomplete="name"></label>
+  <label>Your business<input required name="business" autocomplete="organization"></label>
+  <label>Phone number<input required name="phone" type="tel" autocomplete="tel"></label>
+  <label>Best time to call<select name="best_time"><option>Morning</option><option>Lunchtime</option><option>Afternoon</option><option>Evening</option></select></label>
+  <label>What can I help with? (optional)<textarea name="message" rows="3"></textarea></label>
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <input type="hidden" name="_subject" value="Callback request from harbledowndigital.com">
+  <button class="btn" type="submit">Ask Elliott to call me</button>
+  <p class="ok" id="ok" role="status"></p>
+ </form>
+</div></section>
+
+<footer><div class="wrap">Harbledown Digital, Canterbury, Kent. Run by Elliott Lee. 07809 263767, info@harbledowndigital.com</div></footer>
+<script>
+const f=document.getElementById('cb'),ok=document.getElementById('ok');
+f.addEventListener('submit',async e=>{e.preventDefault();const b=f.querySelector('button');b.disabled=true;b.textContent='Sending…';
+ try{const r=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+  if(r.ok){f.reset();ok.textContent="Thanks, I'll ring you at the time you picked.";}
+  else{ok.textContent="That didn't send. Please ring or text 07809 263767 instead.";}}
+ catch(err){ok.textContent="That didn't send. Please ring or text 07809 263767 instead.";}
+ ok.style.display='block';b.disabled=false;b.textContent='Ask Elliott to call me';});
+</script>
+</body>
+</html>
