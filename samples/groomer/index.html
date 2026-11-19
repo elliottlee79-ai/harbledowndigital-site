@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tidy Hound | Dog grooming in Herne Bay</title>
+<meta name="description" content="Calm, one-dog-at-a-time grooming in Herne Bay. Full grooms, puppy intros, bath and tidy, nail trims. Book online in under a minute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0E4F51;--mint:#CFEDE3;--pink:#FF6F91;--ink:#1A2B2C;--white:#FFFFFF;--mist:#F1F8F5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--white);color:var(--ink);font-size:17px;line-height:1.55}
+a{color:inherit}button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.demo{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:7px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:22px;letter-spacing:-.02em}
+.btn{display:inline-block;white-space:nowrap;background:var(--pink);color:var(--ink);border:0;border-radius:14px;padding:13px 22px;font-weight:700;text-decoration:none}
+.hero{background:var(--teal);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;margin-top:8px}
+h1{font-size:clamp(44px,6.5vw,82px);line-height:.95;letter-spacing:-.035em;font-weight:800;font-variation-settings:"opsz" 96}
+.dogpic{width:100%;max-width:380px;height:auto;justify-self:center;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%;border:8px solid var(--mint)}
+.hero p{font-size:20px;margin:20px 0 26px;max-width:34ch;color:var(--mint)}
+section{padding:80px 0}
+h2{font-size:clamp(32px,4.4vw,50px);line-height:1;letter-spacing:-.03em;font-weight:800;margin-bottom:12px}
+.lead{max-width:56ch;margin-bottom:34px}
+.book{background:var(--mist);border-radius:28px;padding:44px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.step h3{font-size:19px;font-weight:700;margin-bottom:12px;display:flex;gap:10px;align-items:center}
+.step h3 span{background:var(--teal);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-grid;place-items:center;font-size:15px}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;background:#fff;border:2px solid transparent;border-radius:14px;padding:12px 14px;display:flex;justify-content:space-between;gap:10px}
+.opt>span:last-child{white-space:nowrap}
+.opt small{display:block;opacity:.7;font-size:14px}
+.opt[aria-pressed=true]{border-color:var(--teal);background:var(--mint)}
+.sizes{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.sizes .opt{padding:8px 14px}
+.days{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:10px}
+.days .opt{flex-direction:column;align-items:center;padding:8px 4px;gap:0;font-size:14px}
+.days .opt b{font-size:20px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.slots .opt{justify-content:center;padding:9px 4px}
+.slots .opt:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+.summary{margin-top:30px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:#fff;border-radius:16px;padding:18px 22px}
+.summary p{font-weight:600}
+.confirm{display:none;margin-top:14px;background:var(--teal);color:#fff;padding:16px 20px;border-radius:14px}
+.price-list{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.pl{display:flex;justify-content:space-between;padding:14px 0;border-bottom:2px solid var(--mint);gap:12px}
+.pl span:last-child{font-weight:700;white-space:nowrap}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.promise div{border-left:4px solid var(--pink);padding-left:16px}
+.promise strong{font-size:20px;display:block;margin-bottom:4px}
+footer{padding:36px 0;font-size:15px;border-top:2px solid var(--mint)}
+@media (max-width:880px){header .btn{padding:10px 14px;font-size:15px}.hero{grid-template-columns:1fr;padding:36px 28px}.steps,.promise,.price-list{grid-template-columns:1fr}.book{padding:28px 20px}.dogpic{max-width:260px}}
+h1,h2{text-wrap:balance}
+</style>
+</head>
+<body>
+<div class="demo">Sample website by Harbledown Digital. The Tidy Hound is a fictional business and bookings are a demo. <a href="/" style="color:inherit;text-decoration:underline">Back to Harbledown Digital</a></div>
+<div class="wrap">
+<header>
+ <a class="logo" href="#top" aria-label="The Tidy Hound home">
+  <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true"><rect width="46" height="46" rx="14" fill="#0E4F51"/><path d="M12 16c0-5 4-7 7-5l2 6h4l2-6c3-2 7 0 7 5 0 3-2 5-3 6 1 7-4 12-10 12s-11-5-10-12c-1-1-3-3-3-6z" fill="#CFEDE3"/><circle cx="19" cy="24" r="1.8" fill="#1A2B2C"/><circle cx="27" cy="24" r="1.8" fill="#1A2B2C"/><path d="M21 29h4l-2 2z" fill="#FF6F91"/></svg>
+  The Tidy Hound
+ </a>
+ <a class="btn" href="#book">Book a groom</a>
+</header>
+<main id="top">
+ <div class="hero">
+  <div>
+   <h1>One dog at a time. No cages, no rush.</h1>
+   <p>Calm, quiet grooming in Herne Bay for nervous dogs, old dogs and very muddy dogs.</p>
+   <a class="btn" href="#book">See free slots</a>
+  </div>
+  <img class="dogpic" src="img/dog.jpg" alt="A freshly groomed apricot cockapoo with a pink bandana" width="1000" height="1250">
+ </div>
+
+ <section id="book"><div class="book">
+  <h2>Book online</h2>
+  <p class="lead">Pick a groom, your dog's size and a time. You'll get a text reminder the day before.</p>
+  <div class="steps">
+   <div class="step"><h3><span>1</span>Choose a groom</h3><div class="opts" id="svc"></div></div>
+   <div class="step"><h3><span>2</span>Your dog's size</h3><div class="sizes" id="size"></div><p style="font-size:15px;opacity:.8">Not sure? Pick the nearest and we'll adjust on the day.</p></div>
+   <div class="step"><h3><span>3</span>Pick a time</h3><div class="days" id="days"></div><div class="slots" id="slots"></div></div>
+  </div>
+  <div class="summary"><p id="sum">Choose a groom, a size and a time.</p><button class="btn" id="go" disabled>Confirm booking</button></div>
+  <div class="confirm" id="conf" role="status"></div>
+ </div></section>
+
+ <section style="padding-top:0"><div class="wrap" style="padding:0">
+  <h2>Prices</h2>
+  <p class="lead">Small dogs are up to spaniel size. Prices include shampoo, blow-dry, nails and ears.</p>
+  <div class="price-list">
+   <div class="pl"><span>Full groom, small</span><span>£42</span></div>
+   <div class="pl"><span>Full groom, medium</span><span>£52</span></div>
+   <div class="pl"><span>Full groom, large</span><span>£64</span></div>
+   <div class="pl"><span>Bath and tidy</span><span>from £30</span></div>
+   <div class="pl"><span>Puppy introduction, under 6 months</span><span>£25</span></div>
+   <div class="pl"><span>Nail trim, walk-in Saturdays</span><span>£8</span></div>
+  </div>
+ </div></section>
+
+ <section style="padding-top:0"><div class="promise">
+  <div><strong>Just your dog</strong>No other dogs in the salon while yours is with us.</div>
+  <div><strong>Photo when done</strong>We text you a picture and a time to collect.</div>
+  <div><strong>Breaks when needed</strong>Nervous dogs get quiet time. We never force a groom.</div>
+ </div></section>
+</main>
+</div>
+<footer><div class="wrap">The Tidy Hound, Herne Bay, Kent. Tuesday to Saturday, 8:30 to 17:00.</div></footer>
+<script>
+const S=[{n:'Full groom',d:'Bath, cut, nails, ears',p:{Small:42,Medium:52,Large:64},m:'about 2 hours'},{n:'Bath and tidy',d:'Wash, dry, feet and face',p:{Small:30,Medium:36,Large:44},m:'about 1 hour'},{n:'Puppy intro',d:'Gentle first visit',p:{Small:25,Medium:25,Large:25},m:'45 minutes'}];
+const Z=['Small','Medium','Large'];const st={s:null,z:null,d:null,t:null};
+const T=['8:30','9:30','10:30','12:00','13:30','15:00'];
+const now=new Date();const D=[];for(let i=1;D.length<5;i++){const x=new Date(now);x.setDate(now.getDate()+i);if(x.getDay()>=2&&x.getDay()<=6)D.push(x)}
+const f=(el,html)=>document.getElementById(el).innerHTML=html;
+function draw(){
+ f('svc',S.map((x,i)=>`<button class="opt" aria-pressed="${st.s===i}" data-k="s" data-v="${i}"><span>${x.n}<small>${x.d}</small></span><span>${x.m}</span></button>`).join(''));
+ f('size',Z.map(z=>`<button class="opt" aria-pressed="${st.z===z}" data-k="z" data-v="${z}">${z}</button>`).join(''));
+ f('days',D.map((x,i)=>`<button class="opt" aria-pressed="${st.d===i}" data-k="d" data-v="${i}">${x.toLocaleDateString('en-GB',{weekday:'short'})}<b>${x.getDate()}</b></button>`).join(''));
+ f('slots',st.d===null?'<p style="grid-column:1/-1;font-size:15px;opacity:.8">Pick a day to see times.</p>':T.map((t,i)=>{const busy=(i*7+st.d*3)%4===0;return `<button class="opt" ${busy?'disabled aria-label="'+t+' taken"':''} aria-pressed="${st.t===t}" data-k="t" data-v="${t}">${t}</button>`}).join(''));
+ const ok=st.s!==null&&st.z&&st.d!==null&&st.t;
+ document.getElementById('go').disabled=!ok;
+ document.getElementById('sum').textContent=ok?`${S[st.s].n}, ${st.z.toLowerCase()} dog, ${D[st.d].toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'})} at ${st.t}. £${S[st.s].p[st.z]}`:'Choose a groom, a size and a time.';
+}
+document.querySelector('.steps').addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b||b.disabled)return;const k=b.dataset.k;let v=b.dataset.v;if(k==='s'||k==='d')v=+v;st[k]=v;if(k==='d')st.t=null;draw();document.getElementById('conf').style.display='none'});
+document.getElementById('go').onclick=()=>{const c=document.getElementById('conf');c.textContent='Booking confirmed: '+document.getElementById('sum').textContent+'. On the live site this goes into the groomer\'s calendar and texts the owner.';c.style.display='block'};
+draw();
+</script>
+</body>
+</html>

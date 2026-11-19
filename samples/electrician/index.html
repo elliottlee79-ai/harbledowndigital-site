@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harrowell Electrical | Electrician in Chartham & Canterbury</title>
+<meta name="description" content="Local, Part P registered electrician covering Chartham, Canterbury and the Stour Valley. Fuse board upgrades, EV chargers, EICR certificates and fault finding. Free quotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#EEF0EC;--ink:#1B2430;--brown:#7A4A2A;--blue:#2B5FA8;--earth:#3E8E4E;--yellow:#E8C547;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Archivo,system-ui,sans-serif;font-variation-settings:"wdth" 100;background:var(--paper);color:var(--ink);line-height:1.55;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.demo{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:7px 12px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand b{font-variation-settings:"wdth" 75;font-weight:850;font-size:22px;line-height:1;letter-spacing:-.01em}
+.brand small{display:block;font-size:13px;font-weight:500;color:var(--brown)}
+nav a{margin-left:22px;text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
+.callbtn{background:var(--yellow);padding:10px 16px;border-radius:4px;font-weight:800;text-decoration:none;white-space:nowrap}
+.hero{display:grid;grid-template-columns:1fr;padding:72px 56px 60px;margin:8px 0 56px;min-height:560px;align-content:end;border-radius:6px;color:#fff;background:linear-gradient(90deg,rgba(27,36,48,.94) 0%,rgba(27,36,48,.72) 48%,rgba(27,36,48,.05) 100%),url(img/van.jpg) center/cover}
+.hero .btn{border-color:#fff;color:#fff}
+.hero .btn.primary{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+.workhead{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:40px}
+.workhead img{width:100%;height:auto;border-radius:6px;border:2px solid var(--ink)}
+.workhead .sub{margin-bottom:0}
+h1{font-variation-settings:"wdth" 68;font-weight:900;font-size:clamp(48px,7vw,92px);max-width:12ch;line-height:.9;letter-spacing:-.02em;text-transform:uppercase}
+.lede{font-size:20px;max-width:34ch;margin:24px 0 28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 22px;border-radius:4px;font-weight:800;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--ink);color:#fff}
+.cables{display:flex;gap:14px;height:340px;align-items:flex-end}
+.cable{flex:1;border-radius:40px 40px 0 0;position:relative}
+.cable.brown{background:var(--brown);height:100%}
+.cable.blue{background:var(--blue);height:78%}
+.cable.earth{background:repeating-linear-gradient(-35deg,var(--earth) 0 22px,var(--yellow) 22px 44px);height:56%}
+.cable span{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#fff;font-weight:800;font-size:14px;font-variation-settings:"wdth" 75}
+.cable.earth span{color:var(--ink);background:rgba(255,255,255,.85);margin:0 8px;border-radius:3px;padding:2px 0}
+.strip{background:var(--ink);color:#fff;padding:22px 0}
+.strip ul{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 28px;list-style:none;font-weight:600}
+.strip li::before{content:"✓ ";color:var(--yellow)}
+section{padding:80px 0}
+h2{font-variation-settings:"wdth" 75;font-weight:850;font-size:clamp(34px,4.5vw,52px);line-height:1;margin-bottom:12px;letter-spacing:-.01em}
+.sub{max-width:56ch;margin-bottom:40px;font-size:18px}
+.jobs{display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid var(--ink)}
+.job{padding:28px 28px 28px 0;border-bottom:2px solid var(--ink);display:grid;grid-template-columns:1fr auto;gap:6px 20px}
+.job:nth-child(odd){border-right:2px solid var(--ink)}
+.job:nth-child(even){padding-left:28px}
+.job h3{font-size:22px;font-weight:800}
+.job .price{font-weight:800;color:var(--brown);white-space:nowrap}
+.job p{grid-column:1/-1;max-width:48ch}
+.area{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.towns{display:flex;flex-wrap:wrap;gap:8px}
+.towns span{background:var(--white);border:2px solid var(--ink);padding:6px 12px;border-radius:30px;font-weight:600}
+.quote{background:var(--white);border-top:8px solid var(--blue)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px}
+label{display:grid;gap:6px;font-weight:700;font-size:15px}
+input,select,textarea{font:inherit;padding:12px;border:2px solid var(--ink);border-radius:4px;background:var(--paper)}
+.full{grid-column:1/-1}
+.ok{display:none;grid-column:1/-1;background:var(--earth);color:#fff;padding:16px;border-radius:4px;font-weight:700}
+footer{padding:40px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+@media (max-width:800px){
+ .hero{padding:48px 24px 36px;min-height:480px;background:linear-gradient(0deg,rgba(27,36,48,.95) 30%,rgba(27,36,48,.35) 100%),url(img/van.jpg) 30% center/cover}
+ .workhead{grid-template-columns:1fr}
+ nav{display:none}
+ .hero,.area{grid-template-columns:1fr}
+ .cables{height:180px}
+ .jobs{grid-template-columns:1fr}
+ .job:nth-child(odd){border-right:0}
+ .job:nth-child(even){padding-left:0}
+ form{grid-template-columns:1fr}
+}
+h1,h2{text-wrap:balance}
+</style>
+</head>
+<body>
+<div class="demo">Sample website by Harbledown Digital. Harrowell Electrical is a fictional business. <a href="/" style="color:inherit;text-decoration:underline">Back to Harbledown Digital</a></div>
+<div class="wrap">
+<header>
+ <a class="brand" href="#top" aria-label="Harrowell Electrical home">
+  <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="6" fill="#1B2430"/><path d="M8 30c6-8 10-8 16 0s10 8 16 0" stroke="#2B5FA8" stroke-width="4" fill="none"/><path d="M27 6 17 26h8l-4 16 12-22h-8z" fill="#E8C547"/></svg>
+  <span><b>Harrowell<br>Electrical</b></span>
+ </a>
+ <nav><a href="#work">Work</a><a href="#area">Area</a><a href="#quote">Quote</a></nav>
+ <a class="callbtn" href="tel:01227000000">Call 01227 000000</a>
+</header>
+<main id="top">
+<div class="hero">
+ <div>
+  <h1>Your local electrician, Chartham to Canterbury</h1>
+  <p class="lede">Fuse boards, EV chargers, rewires and safety certificates. Fixed quotes before we start, and we turn up when we say we will.</p>
+  <div class="actions"><a class="btn primary" href="#quote">Get a free quote</a><a class="btn" href="#work">See prices</a></div>
+ </div>
+</div>
+</main>
+</div>
+<div class="strip"><div class="wrap"><ul><li>Part P registered</li><li>Fully insured</li><li>Certificates for every job</li><li>12-month workmanship guarantee</li></ul></div></div>
+
+<section id="work"><div class="wrap">
+ <div class="workhead"><div><h2>What we do, and what it costs</h2>
+ <p class="sub">Guide prices for a typical three-bed home. You get a written, fixed quote after a free visit.</p></div><img src="img/board.jpg" alt="A newly fitted consumer unit with labelled circuits" width="1200" height="1015" loading="lazy"></div>
+ <div class="jobs">
+  <div class="job"><h3>Consumer unit upgrade</h3><span class="price">from £520</span><p>Swap an old fuse box for a modern board with RCD protection. Usually done in a day.</p></div>
+  <div class="job"><h3>EV charger installation</h3><span class="price">from £850</span><p>Home charge point fitted, tested and registered with your supplier.</p></div>
+  <div class="job"><h3>EICR landlord certificate</h3><span class="price">from £140</span><p>The five-yearly safety report landlords need, with a clear list of anything to fix.</p></div>
+  <div class="job"><h3>Fault finding</h3><span class="price">£65 first hour</span><p>Tripping switches, dead sockets or flickering lights traced and fixed.</p></div>
+  <div class="job"><h3>Lighting and sockets</h3><span class="price">quoted per job</span><p>Extra sockets, outdoor lights, downlights and garden power.</p></div>
+  <div class="job"><h3>Full or partial rewire</h3><span class="price">quoted per job</span><p>Planned room by room so you can keep living in the house.</p></div>
+ </div>
+</div></section>
+
+<section id="area" style="padding-top:0"><div class="wrap area">
+ <div><h2>Where we work</h2><p class="sub" style="margin-bottom:0">Based in Chartham, so most of the valley is under 20 minutes away. Further afield? Ask, we often can.</p></div>
+ <div class="towns"><span>Chartham</span><span>Canterbury</span><span>Chilham</span><span>Wye</span><span>Bridge</span><span>Harbledown</span><span>Sturry</span><span>Bekesbourne</span><span>Petham</span><span>Ashford</span></div>
+</div></section>
+
+<section id="quote" class="quote"><div class="wrap">
+ <h2>Get a free quote</h2>
+ <p class="sub">Tell us what you need. We reply within one working day, usually sooner.</p>
+ <form id="qf">
+  <label>Your name<input required name="n" autocomplete="name"></label>
+  <label>Phone<input required name="p" type="tel" autocomplete="tel"></label>
+  <label>Postcode<input required name="pc" autocomplete="postal-code"></label>
+  <label>Job type<select name="j"><option>Consumer unit</option><option>EV charger</option><option>EICR certificate</option><option>Fault finding</option><option>Lighting or sockets</option><option>Rewire</option><option>Something else</option></select></label>
+  <label class="full">Anything we should know?<textarea name="m" rows="4"></textarea></label>
+  <button class="btn primary" type="submit">Send quote request</button>
+  <p class="ok" id="ok" role="status">Quote request sent. On the live site this goes straight to your phone and inbox.</p>
+ </form>
+</div></section>
+<footer><div class="wrap"><span>Harrowell Electrical, Chartham, Kent</span><span>Mon to Fri 7:30 to 18:00, Sat 8:00 to 13:00</span></div></footer>
+<script>
+document.getElementById('qf').addEventListener('submit',e=>{e.preventDefault();document.getElementById('ok').style.display='block';});
+</script>
+</body>
+</html>

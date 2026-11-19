@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hollowcomb Honey | Raw Kentish honey, delivered</title>
+<meta name="description" content="Raw, unblended honey from hives in the Elham Valley, Kent. Spring blossom, summer wildflower and heather honey, beeswax candles and gift boxes. UK delivery or collect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--hive:#2C2416;--honey:#E0A526;--wax:#F7E6B5;--heather:#6E4C7E;--sage:#8FA07A;--paper:#FFFCF3}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Instrument Sans",system-ui,sans-serif;background:var(--paper);color:var(--hive);font-size:17px;line-height:1.6}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--heather);outline-offset:3px}
+.demo{background:var(--hive);color:#fff;font-size:13px;text-align:center;padding:7px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:Gloock,serif;font-size:23px;text-decoration:none}
+.cartbtn{background:var(--hive);color:#fff;border:0;border-radius:999px;padding:10px 18px;font-weight:700}
+.cartbtn b{background:var(--honey);color:var(--hive);border-radius:999px;padding:0 8px;margin-left:6px}
+.hero{background:var(--honey);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;min-height:440px;padding-top:56px;padding-bottom:24px}
+h1,h2,h3{font-family:Gloock,serif;font-weight:400}
+h1{font-size:clamp(46px,7vw,90px);line-height:.98;letter-spacing:-.01em}
+.hero p{font-size:20px;max-width:36ch;margin:20px 0 28px}
+.btn{display:inline-block;background:var(--hive);color:#fff;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:0}
+.drip{display:block;width:100%;height:60px}
+.jars{display:flex;gap:14px;justify-content:center;align-items:flex-end;padding-top:30px}
+.season{display:flex;gap:10px;margin:40px 0 8px;flex-wrap:wrap}
+.season button{border:2px solid var(--hive);background:transparent;border-radius:999px;padding:8px 16px;font-weight:600}
+.season button[aria-pressed=true]{background:var(--hive);color:#fff}
+section{padding:60px 0 80px}
+h2{font-size:clamp(34px,4.5vw,50px);line-height:1.05}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:28px}
+.p{display:flex;flex-direction:column}
+.p .img{background:var(--wax);border-radius:10px;aspect-ratio:1/1;display:grid;place-items:center}
+.p h3{font-size:23px;margin:14px 0 2px}
+.p .note{font-size:15px;opacity:.8;flex:1}
+.p .buy{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.p .price{font-weight:700;font-size:19px}
+.add{background:var(--heather);color:#fff;border:0;border-radius:999px;padding:9px 18px;font-weight:700}
+.story{background:linear-gradient(rgba(44,36,22,.62),rgba(44,36,22,.78)),url(img/hives.jpg) center/cover;color:#fff;padding:110px 0}
+.story .facts div{color:var(--hive)}
+.herojars{width:100%;height:auto;border-radius:18px;box-shadow:0 20px 0 -8px var(--hive)}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.story p{margin-bottom:14px;max-width:52ch}
+.facts{display:grid;gap:18px;align-content:start}
+.facts div{background:var(--paper);border-radius:10px;padding:18px 22px}
+.facts strong{font-family:Gloock,serif;font-weight:400;font-size:24px;display:block}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(400px,100%);background:var(--paper);box-shadow:-8px 0 30px rgba(44,36,22,.25);transform:translateX(105%);transition:transform .3s ease;z-index:10;display:flex;flex-direction:column;padding:24px}
+.drawer.open{transform:none}
+.drawer h2{font-size:30px;margin-bottom:12px}
+.lines{flex:1;overflow:auto}
+.line{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:12px 0;border-bottom:1px solid #E8DDC2}
+.qty{display:flex;gap:8px;align-items:center}
+.qty button{width:30px;height:30px;border-radius:50%;border:2px solid var(--hive);background:transparent;font-weight:700}
+.total{display:flex;justify-content:space-between;font-weight:700;font-size:19px;padding:16px 0}
+.ship{font-size:14px;opacity:.8;margin-bottom:12px}
+.close{position:absolute;top:18px;right:20px;background:none;border:0;font-size:28px;line-height:1}
+.msg{display:none;background:var(--wax);padding:12px;border-radius:8px;margin-top:10px;font-size:15px}
+footer{padding:36px 0;font-size:15px;border-top:1px solid #E8DDC2}
+@media (max-width:860px){.hero .wrap,.story .wrap{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.herojars{margin-top:8px}.hero .wrap{min-height:0;padding:48px 24px}}
+@media (max-width:540px){.grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.drawer{transition:none}}
+h1,h2{text-wrap:balance}
+</style>
+</head>
+<body>
+<div class="demo">Sample online shop by Harbledown Digital. Hollowcomb Honey is a fictional business and checkout is a demo. <a href="/" style="color:inherit;text-decoration:underline">Back to Harbledown Digital</a></div>
+<div class="wrap">
+<header>
+ <a href="#top" class="logo" aria-label="Hollowcomb Honey home">
+  <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 3 39 13v18L22 41 5 31V13z" fill="#E0A526"/><path d="M5 22c8-6 12 6 17 0s10-6 17 0" stroke="#2C2416" stroke-width="2.4" fill="none"/><circle cx="22" cy="15" r="3" fill="#2C2416"/></svg>
+  Hollowcomb Honey
+ </a>
+ <button class="cartbtn" id="openCart" aria-controls="drawer">Basket<b id="count">0</b></button>
+</header>
+</div>
+<main id="top">
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Honey that tastes of one valley</h1>
+  <p>Raw and unblended, from 40 hives between Elham and Barham. Each jar is labelled with the season it was made.</p>
+  <a class="btn" href="#shop">Shop the honey</a>
+ </div>
+ <img class="herojars" src="img/jars.jpg" alt="Three jars of honey, pale, golden and dark, with honeycomb and a beeswax candle" width="1600" height="1000">
+</div>
+</div>
+<svg class="drip" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1200v14c-40 0-40 40-80 40s-30-30-70-30-50 22-110 22S860 10 800 10s-50 34-100 34-60-30-120-30-40 20-90 20-70-30-130-30-60 36-120 36S180 12 120 12 40 40 0 40z" fill="#E0A526"/></svg>
+
+<section id="shop"><div class="wrap">
+ <h2>The shop</h2>
+ <div class="season" role="group" aria-label="Filter by type">
+  <button aria-pressed="true" data-f="all">Everything</button>
+  <button aria-pressed="false" data-f="honey">Honey</button>
+  <button aria-pressed="false" data-f="wax">Beeswax</button>
+  <button aria-pressed="false" data-f="gift">Gifts</button>
+ </div>
+ <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="story"><div class="wrap">
+ <div>
+  <h2 style="margin-bottom:18px">Why it tastes different</h2>
+  <p>Supermarket honey is blended from many countries and heated so it stays runny. Ours is spun from the frame, strained once and jarred, so it keeps the flavour of whatever was flowering that month.</p>
+  <p>Spring honey is pale and floral from orchard blossom. By August the bees are on bramble and clover, and the honey turns darker and richer.</p>
+ </div>
+ <div class="facts">
+  <div><strong>40 hives</strong>across five sites in the Elham Valley</div>
+  <div><strong>Free delivery</strong>on UK orders over £30, or collect from the farm gate</div>
+  <div><strong>Plastic-free</strong>glass jars, paper tape and recycled card</div>
+ </div>
+</div></section>
+</main>
+
+<aside class="drawer" id="drawer" aria-label="Your basket" aria-hidden="true">
+ <button class="close" id="closeCart" aria-label="Close basket">×</button>
+ <h2>Your basket</h2>
+ <div class="lines" id="lines"><p>Your basket is empty. Add a jar to get started.</p></div>
+ <div class="total"><span>Total</span><span id="total">£0.00</span></div>
+ <p class="ship" id="ship"></p>
+ <button class="btn" id="checkout" style="width:100%">Go to checkout</button>
+ <p class="msg" id="msg" role="status">This is a demo. On the live shop, checkout opens a secure Stripe or Shopify payment page.</p>
+</aside>
+
+<footer><div class="wrap">Hollowcomb Honey, Kent. Registered with the local authority as a food business.</div></footer>
+
+<script>
+const P=[
+ {id:1,t:'honey',n:'Spring Blossom Honey',w:'340g jar',d:'Pale, soft-set, apple and cherry blossom.',p:8.5,c:'#F3C64E'},
+ {id:2,t:'honey',n:'Summer Wildflower Honey',w:'340g jar',d:'Runny and golden, bramble and clover.',p:8.5,c:'#D9931C'},
+ {id:3,t:'honey',n:'Late Heather Honey',w:'227g jar',d:'Dark, jelly-set and bold. Limited each year.',p:11,c:'#8A4B12'},
+ {id:4,t:'honey',n:'Cut Comb',w:'200g box',d:'Honey straight from the frame, wax and all.',p:12,c:'#EDB43A'},
+ {id:5,s:'candle',t:'wax',n:'Beeswax Pillar Candle',w:'10cm',d:'Hand-poured from our own wax. Burns for 30 hours.',p:9,c:'#F1D58A'},
+ {id:6,s:'box',t:'gift',n:'Taster Gift Box',w:'3 × 113g',d:'Spring, summer and heather side by side.',p:19.5,c:'#6E4C7E'}];
+const jar=(c,s=1)=>`<svg width="${110*s}" height="${140*s}" viewBox="0 0 110 140" aria-hidden="true"><rect x="22" y="6" width="66" height="20" rx="4" fill="#2C2416"/><rect x="10" y="26" width="90" height="108" rx="16" fill="${c}"/><rect x="22" y="58" width="66" height="44" rx="4" fill="#FFFCF3"/><path d="M55 66l9 5v10l-9 5-9-5V71z" fill="#E0A526"/></svg>`;
+
+const shape=(x,s)=>x.s==='candle'?`<svg width="${110*s}" height="${140*s}" viewBox="0 0 110 140" aria-hidden="true"><path d="M55 4c8 10 8 18 0 22-8-4-8-12 0-22z" fill="#E0A526"/><rect x="53" y="24" width="4" height="12" fill="#2C2416"/><rect x="25" y="36" width="60" height="100" rx="8" fill="${x.c}"/></svg>`:x.s==='box'?`<svg width="${120*s}" height="${120*s}" viewBox="0 0 120 120" aria-hidden="true"><rect x="10" y="40" width="100" height="70" rx="6" fill="${x.c}"/><rect x="4" y="28" width="112" height="22" rx="5" fill="#2C2416"/><rect x="54" y="28" width="12" height="82" fill="#E0A526"/><path d="M60 28c-10-20-30-14-20 0M60 28c10-20 30-14 20 0" stroke="#E0A526" stroke-width="6" fill="none"/></svg>`:jar(x.c,s);
+const cart={};const gbp=v=>'£'+v.toFixed(2);
+function render(f='all'){document.getElementById('grid').innerHTML=P.filter(x=>f==='all'||x.t===f).map(x=>`<article class="p"><div class="img">${shape(x,1.3)}</div><h3>${x.n}</h3><div class="note">${x.w}. ${x.d}</div><div class="buy"><span class="price">${gbp(x.p)}</span><button class="add" data-id="${x.id}">Add to basket</button></div></article>`).join('')}
+render();
+document.querySelector('.season').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('.season button').forEach(x=>x.setAttribute('aria-pressed',x===b));render(b.dataset.f)});
+document.getElementById('grid').addEventListener('click',e=>{const b=e.target.closest('.add');if(!b)return;cart[b.dataset.id]=(cart[b.dataset.id]||0)+1;b.textContent='Added';setTimeout(()=>b.textContent='Add to basket',1200);upd()});
+function upd(){const ids=Object.keys(cart).filter(k=>cart[k]>0);let n=0,t=0;
+ document.getElementById('lines').innerHTML=ids.length?ids.map(k=>{const x=P.find(p=>p.id==k);n+=cart[k];t+=cart[k]*x.p;return `<div class="line"><strong>${x.n}</strong><span>${gbp(cart[k]*x.p)}</span><div class="qty"><button data-q="-1" data-id="${k}" aria-label="Remove one">−</button><span>${cart[k]}</span><button data-q="1" data-id="${k}" aria-label="Add one">+</button></div></div>`}).join(''):'<p>Your basket is empty. Add a jar to get started.</p>';
+ document.getElementById('count').textContent=n;document.getElementById('total').textContent=gbp(t);
+ document.getElementById('ship').textContent=t===0?'':t>=30?'Free UK delivery on this order.':`Add ${gbp(30-t)} more for free UK delivery.`}
+document.getElementById('lines').addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(!b)return;cart[b.dataset.id]+=+b.dataset.q;upd()});
+const d=document.getElementById('drawer');
+document.getElementById('openCart').onclick=()=>{d.classList.add('open');d.setAttribute('aria-hidden','false');document.getElementById('closeCart').focus()};
+document.getElementById('closeCart').onclick=()=>{d.classList.remove('open');d.setAttribute('aria-hidden','true')};
+document.getElementById('checkout').onclick=()=>document.getElementById('msg').style.display='block';
+</script>
+</body>
+</html>
